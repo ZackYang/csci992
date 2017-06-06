@@ -1,0 +1,1 @@
+Rails.application.config.redis_connect = Redis.new

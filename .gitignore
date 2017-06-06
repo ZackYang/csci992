@@ -6,6 +6,8 @@
 
 # Ignore bundler config.
 /.bundle
+/app/assets/images/products
+/app/assets/images/**/*.jpg
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
