@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: csci992_production
-  username: csci992
+  username: root
   password: <%= ENV['CSCI992_DATABASE_PASSWORD'] %>
