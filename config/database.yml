@@ -52,3 +52,4 @@ production:
   database: csci992_production
   username: root
   password: <%= ENV['CSCI992_DATABASE_PASSWORD'] %>
+  socket: /run/mysqld/mysqld.sock
