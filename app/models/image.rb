@@ -38,6 +38,10 @@ class Image < ActiveRecord::Base
 		path = Rails.root.join('app/assets/images/products', self.filename.scan(/../).join("/") + '.jpg')
 	end
 
+	def file_url
+		self.filename.scan(/../).join("/") + '.jpg'
+	end
+
 	def index_image
 		Rails.application.config.redis_connect.lpush("queue", self.file_path + "\%\%"+ self.id.to_s)
 	end

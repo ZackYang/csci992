@@ -4,7 +4,8 @@ class Api::V1::SearchersController < ApplicationController
 
 	def create
 		bfile = Base64.decode64(params[:file])
-		file = File.new('./yangziliang.jpg', 'wb+')
+		file_path = Rails.root.join("yangziliang.jpg")
+		file = File.new(file_path, 'wb+')
 		file << bfile
 		file.close
 
